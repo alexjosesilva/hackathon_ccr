@@ -1,3 +1,5 @@
+
+![](http://i.picasion.com/pic90/df85a6ea493f6a93378205d040907b8a.gif)
 # Repositorio para Hackathon_CCR
 ## ConduzBem - Acompanhando o caminhoeira(a) em sua jornada
 
