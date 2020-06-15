@@ -11,7 +11,7 @@ function WelcomeScreen({ navigation }) {
    <TouchableHighlight onPress={() => navigation.navigate('Login')}>
 			<View >
 			  <Image
-						source={require('../assets/img/welcome.png')}
+						source={require('../assets/pages/welcome.png')}
 						style={styles.imagemWellcome}
 				/>
 			</View >
@@ -26,7 +26,7 @@ function LoginScreen({ navigation }) {
 		 //<TouchableHighlight onPress={() => navigation.navigate('Cad')}>
 			<View >
 				<Image
-						source={require('../assets/img/T_login.png')}
+						source={require('../assets/pages/T_login.png')}
 						style={styles.imagemLogin}
 							
 				/>
@@ -66,7 +66,11 @@ function HomeScreen({ navigation }) {
   return (
 				
 			<View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-			  <Text>Home Screen</Text>
+			   <Image
+						source={require('../assets/pages/mapa-parada.png')}
+						style={styles.imagem}
+							
+				/>
 			</View>
 	
   );
@@ -78,7 +82,7 @@ function CadScreen({ navigation }) {
    <TouchableHighlight onPress={() => navigation.navigate('CadRedSocial')}>
 			<View >
 			  <Image
-						source={require('../assets/img/home02.png')}
+						source={require('../assets/pages/registro.png')}
 						style={styles.imagem}
 							
 				/>
@@ -92,7 +96,7 @@ function CadRedSocialScreen({ navigation }) {
    <TouchableHighlight onPress={() => navigation.navigate('Home')}>
 			<View >
 			  <Image
-						source={require('../assets/img/home03.png')}
+						source={require('../assets/pages/home03.png')}
 						style={styles.imagem}
 							
 				/>
@@ -113,7 +117,7 @@ function home() {
 		<Stack.Screen name="Welcome" component={WelcomeScreen} options={{ headerShown: false }} />    
 		<Stack.Screen name="Login" component={LoginScreen} options={{ headerShown: false }}/>
 		<Stack.Screen name="Cad" component={CadScreen} options={{ headerShown: false }} />
-		<Stack.Screen name="Home" component={Menu} options={{ headerShown: false }} />
+		<Stack.Screen name="Home" component={HomeScreen} options={{ headerShown: false }} />
 		<Stack.Screen name="CadRedSocial" component={CadRedSocialScreen} options={{ headerShown: false }} />
       </Stack.Navigator>
     </NavigationContainer>
